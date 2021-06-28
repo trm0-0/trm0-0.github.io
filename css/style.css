@@ -124,6 +124,10 @@ section>p{
   border-radius: 12%;
 }
 
+#profile .sp{
+  display: none;
+}
+
 .content{
   display: inline-flex;
   justify-content: center;
@@ -279,6 +283,11 @@ footer{
     padding-top: 20px;
     text-align: center;
   }
+
+  #profile .sp{
+    display: unset;
+  }
+  
 
   #music .audios{
     flex-direction: column;
