@@ -32,12 +32,12 @@ ul {
 
 
 .container{
-  max-width: 800px;
+  max-width: 960px;
   margin: 0 auto 0;
 }
 
 main{
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -91,6 +91,10 @@ nav a:hover{
   opacity: 0.8;
 }
 
+.spnav{
+  display: none;
+}
+
 
 section{
   margin-bottom: 100px;
@@ -116,6 +120,7 @@ section>p{
   align-items: center;
 }
 #profile img{
+  min-width: 140px;
   border-radius: 12%;
 }
 
@@ -143,14 +148,19 @@ section>p{
 }
 
 .audios{
-  margin-bottom: 40px;
+  margin: 40px 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
+
 .audios li{
-  padding: 20px 0;
+  display: inline-block;
+  padding: 20px 2%;
 }
 
 .audios li p{
   padding-top: 10px;
+  font-size: 0.85rem;
 }
 
 #music .more p{
@@ -174,6 +184,9 @@ section>p{
   opacity: 0.8;
 }
 
+.audios h2{
+  margin-bottom: 20px;
+}
 
 
 #illust .images{
@@ -212,4 +225,66 @@ footer{
   text-align: center;
   padding: 20px 0;
   font-size: 0.75rem;
+}
+
+
+@media screen and (max-width:760px){
+  header h1{
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+
+  section{
+    margin-bottom: 60px;
+  }
+
+  nav{
+    margin: 40px auto 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  nav li{
+    text-align: center;
+    display: block;
+  }
+  nav ul{
+    max-width: 300px;
+    height: 64px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto 0;
+  }
+
+  .pcnav{
+    display: none;
+  }
+  .spnav{
+    display:inline-block;
+  }
+
+  main{
+    padding: 0 4% 0;
+  }
+
+  #profile .content{
+    flex-direction: column;
+  }
+
+  #profile .icon{
+    justify-content: center;
+  }
+
+  #profile .text{
+    padding-left: 0;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  #music .audios{
+    flex-direction: column;
+  }
+
+  .audios li{
+    display: block;
+  }
 }
